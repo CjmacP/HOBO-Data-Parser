@@ -16,7 +16,7 @@ layout = [[sg.Text('   ')],
                    "  "), sg.Submit('Save and get Max Stage', tooltip='Click save', button_color=('black', 'light blue')), sg.Text(' '),
            sg.Quit(tooltip='Quit to Exit')]]
 
-window = sg.Window('HOBO to AQ *.csv').Layout(layout)
+window = sg.Window('HOBO Parser').Layout(layout)
 
 event, (start, BracketElevation, Offset, finish,) = window.Read()
 
